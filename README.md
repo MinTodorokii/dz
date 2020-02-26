@@ -1,1 +1,91 @@
-# dz
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaće životinje</title>
+    <style>
+    .prva {
+     background-color: #27496d ;
+     padding: 7% 15%;
+     color:#00a8cc;
+
+
+ }
+.druga {
+    background-color: #142850 ;
+    padding: 7% 15%;
+    color: #00a8cc;
+}
+    </style>
+</head>
+<body>
+
+
+    <section class="prva">
+
+        
+<h1>Domaće životinje</h1>
+
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Restatis igitur vos; Nunc vides, quid faciat. Confecta res esset.
+   Equidem e Cn. </p>
+   
+   <h2>Magarac</h2>
+<img src="images/magarac.jpg" id="ig1" alt="magarac">
+<p id="p2">Erat enim Polemonis. Nam ista vestra: Si gravis, brevis; Nam Pyrrho, 
+Aristo, Erillus iam diu abiecti. Illi enim inter se dissentiunt. Quis est 
+tam dissimile homini. Summus dolor plures dies manere non potest? </p>
+
+    </section>
+    
+    <section class="druga">
+    <h2>Krava</h2>
+    <img id="ig2" src="images/krava.jpg" alt="Kravicaa" onmouseover="this.src='images/krava2.jpg'" onmouseout="this.src='images/krava.jpg'"></img>
+    
+    <p id="p3">Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Sed videbimus. 
+    Hos contra singulos dici est melius. Dicimus aliquem hilare vivere; Cur, 
+    nisi quod turpis oratio est? Quid dubitas igitur mutare 
+    principia naturae? </p>
+</section>
+
+<section class="prva">
+    <h2>Ovca</h2>
+    
+    <img src="images/ovca.jpg" id="ig3" alt=" Ovca">
+    <p id="p4">Quid Zeno? Haec dicuntur fortasse ieiunius; Quae duo sunt, unum facit. Res enim concurrent contrariae.</a> </p>
+    </section>
+    
+    <section class="druga">
+        <h2>Konj</h2>
+        <img  src="images/konj.jpg"  id="ig4" alt=" konj" value="PLAY"  onclick="play()">
+        <audio id="audio" src="zvukkonja.mp3" ></audio>
+        <p id="p5" >Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Sed videbimus. 
+        Hos contra singulos dici est melius. Dicimus aliquem hilare vivere; Cur, 
+        nisi quod turpis oratio est? Quid dubitas igitur mutare 
+        principia naturae? </p>
+ </section>
+ 
+ <script>
+ document.getElementById("p1").style.fontSize = "1,5rem";
+document.getElementById("p2").style.fontSize = "1,5rem";
+document.getElementById("p3").style.fontSize = "1,5rem";
+document.getElementById("p4").style.fontSize = "1,5rem";
+document.getElementById("p5").style.fontSize = "1,5rem";
+
+document.getElementById("ig1").width = "300";
+document.getElementById("ig2").width = "300";
+document.getElementById("ig3").width = "300";
+document.getElementById("ig4").width = "300";
+
+document.getElementById("p1").innerHTML = "Domaće životinje su one životinje koje čovjek pripitomljava i uzgaja radi koristi i razonode, a koje i same imaju koristi od takve trajne zajednice sa čovjekom jer su zaštićene u borbi za opstanak. Da bi se neka životinja smatrala domaćom, potrebno je ispuniti tri uvjeta. Prvi je uvjet da životinja posjeduje osobine koje su čovjeku korisne, drugi da je privržena i poslušna čovjeku i treći da se jedinke redovito razmnožavaju pod čovjekovim nadzorom";
+document.getElementById("p2").innerHTML = "Magarac kakvog danas poznamo potječe od divljih predaka iz Afrike, nubijskog i somalijskog divljeg magarca. Nubijski divlji   magarac potječe s područja Sjeverne Afrike (današnje Eritreje), a somalijski divlji magarac s juga Eritreje i sjeverne Somalije. Magarac je udomaćen prije osam tisuća godina. U trećem tisućljeću pr.Kr. magarci se šire Azijom, a ratovi i trgovina, posebno ‹›put svile››, dovode magarce i na područje Europe, najvjerovatnije prije tri do četiri tisuće godina prije kris";
+document.getElementById("p3").innerHTML = "Domaćim govedom, često jednostavno samo govedom, nazivaju se domesticirani potomci divljeg goveda (Bos taurus). Domesticiranje je počelo prvo radi mesa, a kasnije radi mlijeka i njihove snage korištene za vuču.";
+
+function play(){
+    var audio = document.getElementById("audio");
+    audio.play();
+              }
+              </script>
+</body>
+</html>
